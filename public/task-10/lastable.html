@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="latab.js"></script> 
+</head>
+<body onload="clk()">
+	<div class="container py-5">
+	<div class="form-inline py-4">
+      <select class="mdb-select form-control mb-form" name="selec" id="selec"> 
+      </select>
+		<label for="price" class="ml-5"><b>Quantity :</b></label>
+		<input type="text" name="price" id="qty" class="form-control ml-2 mr-5 ">
+		<button type ="button" onclick="clk()" class =" ml-5 py-1 px-5 btn-primary">Add</button>
+		<a href="table.html"><button type ="button" class =" ml-3 py-1 px-5 btn-primary">List</button></a>
+		<a href="inner.html"><button type = "button" class =" ml-3 py-1 px-5 btn-primary">Home</button></a>
+	</div>	
+		<table class="table ">
+			<thead class="bg-secondary">
+				<tr class="mx-auto text-center">
+				   
+					<th>Products</th>
+					<th>Quantity</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody id="rare">				
+			</tbody>
+			<tr class="mx-auto text-center">
+				<th></th>
+				<th>Total Price</th>
+				<th ><input type="text"  id ="rares"></th>
+			</tr>			
+		</table>
+	</div>
+</body>
+</html>
